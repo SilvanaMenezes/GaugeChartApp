@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <com.github.anastr.speedviewlib.PointerSpeedometer
+        android:id="@+id/gauge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:sv_centerCircleColor="#00BCD4"
+        app:sv_endDegree="360"
+        app:sv_maxSpeed="100"
+        app:sv_minSpeed="0"
+        app:sv_sectionColors="@array/gaugeColors"
+        app:sv_sectionDegree="60"
+        app:sv_speedometerWidth="30dp"
+        app:sv_startDegree="180"
+        app:sv_withTremble="false"
+        app:sv_backgroundCircleColor="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/btnAumentar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gauge"
+        android:layout_alignParentEnd="true"
+        android:text="Aumentar"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnDiminuir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gauge"
+        android:layout_alignParentStart="true"
+        android:text="Diminuir"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>
+
